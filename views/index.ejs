@@ -28,11 +28,11 @@
       </thead>
       <tbody>
         <% shortURLs.forEach(url => { %>
-          <tr>
-            <td><a href="<%= url.fullURL %>"><%= url.fullURL %></a></td>
-            <td class="text-center"><a href="<%= url.shortURL %>"><%= url.shortURL %></a></td>
-            <td class="text-center"><%= url.clicks %></td>
-          </tr>
+        <tr>
+          <td><a href="<%= url.fullURL %>"><%= url.fullURL %></a></td>
+          <td class="text-center"><a href="<%= url.shortURL %>" target="blank"><%= url.shortURL %></a></td>
+          <td class="text-center"><%= url.clicks %></td>
+        </tr>
         <% }); %>
       </tbody>
     </table>
